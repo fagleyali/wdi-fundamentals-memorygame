@@ -36,6 +36,7 @@ var cards = [
 
 ];
 
+var scores;
 
 var createBoard = function(){
 	for (var i = 0; i < cards.length; i++){
@@ -56,6 +57,7 @@ var checkForMatch = function(){
 	if (cardsInPlay.length === 2) {
 	if (cardsInPlay[0] === cardsInPlay [1]) {
 		alert("You found a match!");
+		scores += 1;
 	} else {
 		alert("Sorry! Try again");
 	}
@@ -79,4 +81,18 @@ var flipCard = function(){
 // flipCard(2);
 
 createBoard();
+
+
+
+
+
+
+var Refresh = function(){
+	
+	location.reload(true);
+	
+	
+}
+
+
 
